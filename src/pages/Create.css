@@ -1,0 +1,85 @@
+/* Nuevo CSS para CreateVideoPage */
+
+.create-video__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    background-color: #f9f9f9; /* Fondo claro opcional */
+    min-height: 100vh; /* Asegura que ocupe toda la pantalla */
+}
+
+.create-video__form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.create-video__title {
+    font-size: 32px;
+    font-weight: bold;
+    color: #444;
+    text-align: center;
+}
+
+.create-video__description,
+.create-video__subtitle {
+    font-size: 16px;
+    color: #666;
+}
+
+.create-video__form-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+}
+
+.create-video__form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.create-video__label {
+    font-size: 14px;
+    font-weight: bold;
+    color: #333;
+}
+
+.create-video__input,
+.create-video__textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    width: 100%;
+    resize: none;
+}
+
+.create-video__submit {
+    padding: 10px 15px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.create-video__submit:hover {
+    background-color: #0056b3;
+}
+
+.create-video__success {
+    color: #28a745;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.create-video__error {
+    color: #dc3545;
+    font-size: 14px;
+    margin-top: 10px;
+}

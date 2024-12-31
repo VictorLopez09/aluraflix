@@ -1,0 +1,117 @@
+/* Preview Section */
+.preview {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 40px;
+    padding: 40px;
+    background: 
+        linear-gradient(rgba(27, 33, 45, 0.56), rgba(0, 18, 51, 0.56)),
+        url('/img/background.jpeg') no-repeat center center;
+    background-size: cover;
+}
+
+.preview__content,
+.preview__video {
+    flex: 1;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.preview__content {
+    color: #fff;
+    gap: 10px;
+}
+
+.preview__category {
+    font-family: Roboto, 'Helvetica Neue', sans-serif;
+    font-size: 32px;
+    text-transform: uppercase;
+    /* background-color: #6BD1FF; */
+    color: #ffffff;
+    border-radius: 15px;
+    text-align: center;
+    padding: 10px 20px;
+    width: fit-content;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.preview__title {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.preview__description {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.preview__video {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    border-radius: 10px;
+    overflow: hidden;
+    /* box-shadow: 0 5px 15px #219fde; */
+}
+
+.preview__video-frame {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+
+
+/* Media Queries */
+@media (max-width: 1024px) {
+
+
+    .preview {
+        flex-direction: column;
+        justify-items: center;
+        align-items: center;
+        padding: 20px;
+        gap: 20px;
+    }
+
+    .preview__content {
+        max-width: 100%;
+        
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media (max-width: 430px) {
+    .preview {
+        flex-direction: column-reverse;
+        padding: 15px;
+    }
+
+    .preview__content {
+        margin-top: 15px;
+    }
+
+    .preview__video-frame {
+        height: 200px;
+    }
+
+    .preview__category {
+        font-size: 24px;
+    }
+
+    .preview__title {
+        font-size: 20px;
+    }
+
+    .preview__description {
+        font-size: 14px;
+    }
+}

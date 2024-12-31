@@ -51,9 +51,10 @@ Este proyecto es una aplicación React para gestionar y crear videos, donde pued
 |   |-- Preview.jsx       # Vista previa del último video agregado
 |   |-- VideoList.jsx     # Lista de videos agrupados por categoría
 |-- /pages
-|   |-- CreateVideoPage.jsx # Página para crear videos
+|   |-- Home.jsx # Página para crear videos
+|   |-- Create.jsx # Página para crear videos
 |-- /styles
-|   |-- CreateVideoPage.css # Estilos únicos para la página de creación
+|   |-- Main.css
 ```
 
 ## Instalación y configuración
